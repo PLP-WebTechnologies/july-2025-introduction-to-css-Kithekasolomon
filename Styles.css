@@ -1,0 +1,246 @@
+/* General reset for consistent Box Model behavior */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in width/height */
+}
+
+/* Body styling for overall page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7f5; /* Light green-gray background for eco theme */
+    margin: 20px; /* Outer spacing around page */
+}
+
+/* Header styling */
+header {
+    background-color: #2e7d32; /* Dark green for eco theme */
+    color: white;
+    text-align: center;
+    padding: 25px 20px; /* Inner spacing */
+    border: 2px solid #1b5e20; /* Darker green border */
+    margin-bottom: 20px; /* Space below header */
+}
+
+header h1 {
+    font-size: 2.5em; /* Large, prominent heading */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #4caf50; /* Medium green */
+    padding: 15px;
+    border: 1px solid #388e3c;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px; /* Clickable area padding */
+}
+
+nav a:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    border-radius: 5px;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px; /* Constrain content width for readability */
+    margin: 0 auto; /* Center main content */
+}
+
+/* Section styling (general) */
+section {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Subtle rounded corners */
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #2e7d32; /* Green heading */
+    margin-bottom: 15px;
+}
+
+/* Hero section with image */
+section[aria-labelledby="hero-heading"] {
+    text-align: center;
+    background-color: #e8f5e9; /* Light green background */
+    border: 2px dashed #81c784; /* Dashed border for visual flair */
+}
+
+section[aria-labelledby="hero-heading"] p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+section figure img {
+    max-width: 100%; /* Responsive image */
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+section figure figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* About section with list */
+section[aria-labelledby="about-heading"] ul {
+    list-style: disc;
+    margin-left: 20px; /* Indent list */
+    margin-bottom: 15px;
+}
+
+section[aria-labelledby="about-heading"] li {
+    margin-bottom: 10px;
+}
+
+/* Schedule section with table */
+section[aria-labelledby="schedule-heading"] table {
+    width: 100%;
+    border-collapse: collapse; /* Merge borders */
+    margin-bottom: 15px;
+}
+
+section[aria-labelledby="schedule-heading"] caption {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+section[aria-labelledby="schedule-heading"] th,
+section[aria-labelledby="schedule-heading"] td {
+    border: 1px solid #ccc;
+    padding: 10px; /* Inner cell spacing */
+    text-align: left;
+}
+
+section[aria-labelledby="schedule-heading"] th {
+    background-color: #4caf50;
+    color: white;
+}
+
+section[aria-labelledby="schedule-heading"] tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for readability */
+}
+
+/* Resources section with audio */
+section[aria-labelledby="resources-heading"] audio {
+    width: 100%; /* Full-width audio player */
+    margin-bottom: 10px;
+}
+
+section[aria-labelledby="resources-heading"] figcaption {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Form section styling */
+section[aria-labelledby="register-heading"] form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+section[aria-labelledby="register-heading"] fieldset {
+    border: 1px solid #81c784;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+section[aria-labelledby="register-heading"] legend {
+    font-size: 1.2em;
+    color: #2e7d32;
+    padding: 0 10px;
+}
+
+section[aria-labelledby="register-heading"] label {
+    display: block; /* Stack labels above inputs */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section[aria-labelledby="register-heading"] input,
+section[aria-labelledby="register-heading"] select,
+section[aria-labelledby="register-heading"] textarea {
+    width: 100%; /* Full-width inputs */
+    padding: 8px; /* Inner spacing */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+section[aria-labelledby="register-heading"] input[type="checkbox"] {
+    width: auto; /* Checkboxes don't need full width */
+    margin-right: 10px;
+}
+
+section[aria-labelledby="register-heading"] textarea {
+    resize: vertical; /* Allow vertical resizing only */
+}
+
+section[aria-labelledby="register-heading"] button {
+    background-color: #4caf50;
+    color: white;
+    border: 1px solid #388e3c;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+section[aria-labelledby="register-heading"] button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #1b5e20;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #e8f5e9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
